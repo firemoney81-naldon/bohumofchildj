@@ -1,23 +1,326 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+  <!-- Schema.org FinancialService 마크업(JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "어린이보험 비교 플랫폼",
+    "image": "https://domain.com/insurance-logo.png",
+    "url": "https://domain.com/child-insurance",
+    "telephone": "02-123-4567",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "서울특별시 강남구 테헤란로 123",
+      "addressLocality": "강남구",
+      "addressRegion": "서울",
+      "postalCode": "06130",
+      "addressCountry": "KR"
+    },
+    "areaServed": {
+      "@type": "ServiceArea",
+      "name": "대한민국 전역"
+    },
+    "priceRange": "₩₩₩",
+    "description": "2026년 최신 어린이보험 상품을 비교하고 전문가의 조언을 받아보세요."
+  }
+  </script>
+
+  <style>
+    /* 부드럽고 다채로운 색상 + 계층 잘 보이도록 개선 */
+    body { font-family: 'Noto Sans KR', sans-serif; margin:0; padding:0; background:#f0f4f8; color:#333; line-height:1.6; }
+    header, section, footer { max-width:900px; margin:20px auto; padding:20px; background:#ffffff; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.05); }
+    h1, h2, h3 { color:#0b3d91; margin-bottom:12px; }
+    h1 { font-size:2.5rem; }
+    h2 { font-size:2rem; border-bottom:3px solid #a3c4ff; padding-bottom:8px; }
+    h3 { font-size:1.5rem; color:#4285f4; margin-top:20px; }
+    p, li, td, th { font-size:1rem; }
+    ul, ol { padding-left:25px; }
+    table { width:100%; border-collapse: collapse; margin:20px 0; }
+    th, td { border:1px solid #ccddee; padding:12px; text-align:left; }
+    th { background:#a3c4ff; color:#fff; }
+    a { color:#0b3d91; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .btn-cta {
+      display:inline-block;
+      padding:14px 30px;
+      background:#4285f4;
+      color:#fff;
+      font-weight:700;
+      border:none;
+      border-radius:30px;
+      box-shadow:0 6px 10px rgba(66, 133, 244, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      cursor:pointer;
+      text-decoration:none;
+      text-align:center;
+    }
+    .btn-cta:hover {
+      background:#3367d6;
+      transform:translateY(-2px);
+    }
+    .anchor { display:block; position:relative; top:-100px; visibility:hidden; }
+    /* 반응형 */
+    @media(max-width:600px) {
+      body { padding:10px; }
+      header, section, footer { margin:10px auto; padding:15px; }
+      .btn-cta { width:100%; padding:15px 0; }
+      h1 { font-size:2rem; }
+      h2 { font-size:1.5rem; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>어린이보험 가입, 2026년 최신 정보 기반 맞춤 비교 견적</h1>
+    <p>우리 아이의 미래를 위한 현명한 선택! 2026년 주요 보험사별 어린이보험 순위, 평균 비용, 가입 시기 및 비갱신형 장단점 완벽 분석.</p>
+    <a class="btn-cta" href="#contact">2026년 어린이보험 맞춤 견적 받기</a>
+  </header>
+
+  <nav aria-label="페이지 내 이동">
+    <ul>
+      <li><a href="#intro">어린이보험 가입의 필요성</a></li>
+      <li><a href="#pricing">2026년 평균 보험료 및 비용 비교</a></li>
+      <li><a href="#types">갱신형 vs 비갱신형 장단점 비교</a></li>
+      <li><a href="#checklist">어린이보험 가입 전 체크리스트</a></li>
+      <li><a href="#faq">자주 묻는 질문 (FAQ)</a></li>
+      <li><a href="#contact">1:1 맞춤 상담 신청</a></li>
+    </ul>
+  </nav>
+
+  <section id="intro">
+    <span id="intro-anchor" class="anchor"></span>
+    <h2>어린이보험 가입, 왜 중요할까요? (2026년 기준)</h2>
+    <p>어린이보험은 단순히 아이가 아플 때 드는 병원비만 보장하는 것이 아닙니다. 성장 과정에서 발생할 수 있는 각종 질병, 상해, 그리고 심지어 소아암과 같은 중증 질환에 대비하여 고액의 치료비 부담을 줄여주는 핵심적인 재정 보호 수단입니다. 특히 2026년 현재 의료 기술 발달로 인해 소아 질병 치료비는 꾸준히 증가하고 있으며, 이에 따라 어린이보험의 중요성은 더욱 강조되고 있습니다.</p>
+
+    <h3>1. 어린이보험의 장점: 성장 과정의 위험 대비</h3>
+    <p>어린이보험은 태아보험에서부터 시작하여 아이가 성인이 되기까지의 모든 위험을 대비하는 상품입니다. 성인보험과는 달리 성장기에 특화된 보장 내용으로 구성되어 있으며, 주요 장점은 다음과 같습니다.</p>
+    <ul>
+      <li><strong>질병 보장 확대:</strong> 폐렴, 수족구, 중이염 등 어린이에게 흔한 질병부터 소아암, 뇌혈관 질환 등 중증 질환까지 폭넓게 보장합니다.</li>
+      <li><strong>상해 사고 보장:</strong> 활동량이 많은 아이들의 특성상 넘어지거나 다치는 일이 잦습니다. 골절 진단비, 화상 진단비 등 상해 관련 특약이 강화되어 있습니다.</li>
+      <li><strong>성인 전환형 보장:</strong> 100세 만기 상품의 경우, 아이가 성인이 된 후에도 저렴한 보험료로 성인 질환까지 보장받을 수 있습니다.</li>
+      <li><strong>보험료 저렴:</strong> 일반적으로 가입 시기가 빠를수록 보험료가 저렴합니다. 태아보험으로 가입하면 출생 전후의 위험까지 대비할 수 있습니다.</li>
+    </ul>
+
+    <h3>2. 2026년 어린이보험 시장 동향 및 가입 시기</h3>
+    <p>최근에는 갱신형보다는 비갱신형을 선호하는 추세입니다. 또한, 보험사들이 어린이보험 특약을 세분화하여 보장 범위를 넓히고 있습니다. 어린이보험 가입 시기는 빠르면 빠를수록 좋습니다. 특히 태아보험으로 가입할 경우 출산 전후 위험(저체중아 인큐베이터 비용, 선천성 질환 등)을 보장받을 수 있습니다.</p>
+    <a href="https://www.fss.or.kr/" target="_blank">금융감독원 (FSS) 어린이보험 가이드라인 참고하기</a>
+  </section>
+
+  <section id="pricing">
+    <span id="pricing-anchor" class="anchor"></span>
+    <h2>2026년 어린이보험 평균 비용 및 비교 분석</h2>
+    <p>어린이보험료는 가입하는 시기, 보장 기간, 특약 종류, 갱신 여부, 성별, 그리고 보험사별 손해율에 따라 달라집니다. 2026년 기준, 비갱신형 30세 만기 상품을 기준으로 한 평균 보험료를 비교해 보았습니다.</p>
+
+    <h3>1. 어린이보험 평균 비용 테이블 (비갱신형 30세 만기 기준)</h3>
+    <p>아래 표는 일반적인 보장 항목(암, 뇌혈관, 심장질환 진단비, 입원일당, 골절)을 기준으로 산정된 예상 금액입니다. 실제 가입 금액은 선택 특약에 따라 크게 달라질 수 있습니다.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>아이 연령</th>
+          <th>추천 보장 구성</th>
+          <th>예상 보험료 (월)</th>
+          <th>주요 고려사항</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>신생아 (태아)</td>
+          <td>태아 특약 + 기본 보장 + 입원/수술</td>
+          <td>₩30,000 ~ ₩60,000</td>
+          <td>출생 후 선천성 질환 보장 여부</td>
+        </tr>
+        <tr>
+          <td>1세 ~ 5세</td>
+          <td>기본 보장 강화 (암, 뇌혈관, 심장)</td>
+          <td>₩25,000 ~ ₩45,000</td>
+          <td>면역력 약화에 따른 질병 보장 집중</td>
+        </tr>
+        <tr>
+          <td>6세 ~ 10세</td>
+          <td>상해 및 학교생활 위험 특약 추가</td>
+          <td>₩20,000 ~ ₩40,000</td>
+          <td>활동 증가에 따른 상해 위험 대비</td>
+        </tr>
+        <tr>
+          <td>11세 ~ 15세</td>
+          <td>성장기 특화 보장 및 성인 질환 대비</td>
+          <td>₩20,000 ~ ₩35,000</td>
+          <td>성인 전환형 선택 시 유리</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>2. 보험료를 저렴하게 가입하는 방법</h3>
+    <p>어린이보험을 저렴한 곳에서 가입하기 위해서는 여러 가지 팁이 있습니다. 먼저, 불필요한 특약(자잘한 특약이나 과도한 일당 보장)은 제외하는 것이 좋습니다. 또한, 여러 보험사의 상품을 비교하여 평균 금액을 확인하고, 보험료가 저렴한 상품을 선택하는 것이 현명합니다. 비갱신형을 선택할 경우 초기 보험료는 높지만, 총 납입 금액은 더 낮을 수 있습니다.</p>
+    <a href="https://www.ins.or.kr/" target="_blank">생명보험협회 공시자료 확인하기</a>
+  </section>
+
+  <section id="types">
+    <span id="types-anchor" class="anchor"></span>
+    <h2>어린이보험 유형별 장단점: 비갱신형 vs 갱신형 비교</h2>
+    <p>어린이보험은 보장 기간과 보험료 변동 여부에 따라 크게 비갱신형과 갱신형으로 나뉩니다. 두 가지 유형의 장단점과 차이점을 명확히 이해하고 가입해야 합니다.</p>
+
+    <h3>1. 비갱신형 어린이보험 장점과 단점</h3>
+    <p>비갱신형은 가입 시점의 보험료가 만기 시까지 변동 없이 유지되는 형태입니다. 초기 보험료는 다소 높지만, 장기간 납입 시 총 납입 금액은 갱신형보다 저렴해지는 경우가 많습니다. 특히 100세 만기 상품을 선택할 경우 성인이 되어서도 동일한 보험료로 보장받을 수 있다는 장점이 있습니다.</p>
+    <ul>
+      <li><strong>장점:</strong>
+        <ul>
+          <li>보험료 변동 없음: 한번 정해진 보험료가 만기까지 유지되어 안정적입니다.</li>
+          <li>총 납입금액 절감: 장기적으로 볼 때 갱신형보다 총액이 저렴할 수 있습니다.</li>
+          <li>노후 대비: 성인 전환형으로 가입 시 노후까지 저렴하게 보장 가능합니다.</li>
+        </ul>
+      </li>
+      <li><strong>단점:</strong>
+        <ul>
+          <li>초기 보험료 부담: 갱신형보다 초기 납입 금액이 높을 수 있습니다.</li>
+          <li>가입 심사 기준: 갱신형보다 가입 심사가 까다로울 수 있습니다.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>2. 갱신형 어린이보험 장점과 단점</h3>
+    <p>갱신형은 일정 기간(예: 10년, 20년)마다 보험료가 재산정되는 형태입니다. 초기 보험료가 저렴하다는 장점이 있지만, 나이가 들거나 물가 상승, 의료수가 변동 등으로 인해 갱신 시점에 보험료가 크게 오를 수 있습니다.</p>
+    <ul>
+      <li><strong>장점:</strong>
+        <ul>
+          <li>초기 보험료 저렴: 당장의 경제적 부담이 적습니다.</li>
+          <li>상품 변경 용이: 갱신 시점에 최신 상품으로 변경할 수 있습니다.</li>
+        </ul>
+      </li>
+      <li><strong>단점:</strong>
+        <ul>
+          <li>보험료 상승 위험: 갱신 시점에 보험료가 급격히 인상될 수 있습니다.</li>
+          <li>총 납입금액 증가: 장기적으로 보면 총 납입 금액이 더 높을 수 있습니다.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>3. 비갱신형 vs 갱신형 비교표</h3>
+    <p>두 유형의 장단점을 종합적으로 고려하여 우리 아이에게 적합한 유형을 선택하는 것이 중요합니다.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>구분</th>
+          <th>비갱신형</th>
+          <th>갱신형</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>보험료 변동</td>
+          <td>고정 (만기까지 동일)</td>
+          <td>갱신 시점마다 변동 (주로 인상)</td>
+        </tr>
+        <tr>
+          <td>초기 보험료</td>
+          <td>높음</td>
+          <td>낮음</td>
+        </tr>
+        <tr>
+          <td>총 납입 금액</td>
+          <td>낮음 (장기 납입 시)</td>
+          <td>높음 (장기 납입 시)</td>
+        </tr>
+        <tr>
+          <td>추천 대상</td>
+          <td>장기적인 보장을 원하는 경우</td>
+          <td>단기적인 부담을 줄이고 싶은 경우</td>
+        </tr>
+      </tbody>
+    </table>
+    <a href="https://namu.wiki/w/%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%B3%B4%ED%97%98" target="_blank">나무위키 어린이보험 정보</a>
+  </section>
+
+  <section id="checklist">
+    <span id="checklist-anchor" class="anchor"></span>
+    <h2>어린이보험 가입 전 필수 체크리스트 (2026년 가이드)</h2>
+    <p>현명한 어린이보험 가입을 위해 꼭 확인해야 할 7가지 핵심 사항입니다. 단순히 저렴한 곳을 찾는 것보다 보장 내용을 꼼꼼히 확인하는 것이 중요합니다.</p>
+    <ol>
+      <li><strong>가입 시기 결정:</strong> 태아보험으로 가입할지, 출생 후 어린이보험으로 가입할지 결정합니다. 태아보험은 임신 22주 이전에 가입해야 선천성 질환 특약을 넣을 수 있습니다.</li>
+      <li><strong>보장 기간 선택:</strong> 30세 만기 또는 100세 만기를 선택합니다. 100세 만기는 성인 전환형으로 아이가 성인이 된 후에도 보장이 지속됩니다.</li>
+      <li><strong>주요 특약 확인:</strong> 암 진단비 (특히 소아암), 뇌혈관 질환 진단비, 허혈성 심장질환 진단비를 충분히 확보했는지 확인합니다.</li>
+      <li><strong>입원/수술 보장:</strong> 입원일당, 수술비 특약이 제대로 구성되어 있는지 확인합니다. 특히 신생아나 영유아는 입원할 일이 잦으므로 중요합니다.</li>
+      <li><strong>면책 기간/감액 기간:</strong> 면책 기간(보장 시작이 유예되는 기간)과 감액 기간(보장 금액이 줄어드는 기간)을 확인합니다. 일반적으로 암 진단비는 가입 후 90일 면책, 1년 후 50% 감액 등의 조건이 붙습니다.</li>
+      <li><strong>보험사별 순위 비교:</strong> 여러 보험사의 상품을 비교하여 보장 내용과 금액을 확인합니다. 꼼꼼한 비교를 통해 내돈내산 후기처럼 만족도 높은 선택을 할 수 있습니다.</li>
+      <li><strong>특정 질환 보장:</strong> 백혈병, 소아암, 뇌성마비 등 특정 질환에 대한 보장이 강화되었는지 확인합니다.</li>
+    </ol>
+  </section>
+
+  <section id="faq">
+    <span id="faq-anchor" class="anchor"></span>
+    <h2>자주 묻는 질문 (FAQ)</h2>
+    <dl>
+      <dt>Q1: 어린이보험 가입 순위가 중요한가요?</dt>
+      <dd>A: 보험 가입 순위는 참고 자료일 뿐입니다. 중요한 것은 아이의 나이와 건강 상태에 맞는 맞춤형 보장 설계입니다. 순위보다는 보장 범위와 보험료의 합리적인 조합을 찾아야 합니다.</dd>
+
+      <dt>Q2: 태아보험을 가입해야 하나요? 일반 어린이보험과 차이점은 무엇인가요?</dt>
+      <dd>A: 태아보험은 출생 시 발생할 수 있는 선천성 질환이나 저체중아 보육비 등을 보장해줍니다. 일반 어린이보험은 출생 이후의 질병/상해를 보장합니다. 태아보험은 가입 시기가 정해져 있으므로 출산 전후 보장을 원한다면 미리 가입해야 합니다.</dd>
+
+      <dt>Q3: 어린이보험은 30세 만기로 가입하는 것이 좋은가요, 100세 만기로 가입하는 것이 좋은가요?</dt>
+      <dd>A: 30세 만기는 성인이 되기까지의 짧은 기간 동안 핵심 보장에 집중하여 보험료가 저렴하다는 장점이 있습니다. 100세 만기는 성인 전환형으로 가입 시 노후까지 보장받을 수 있지만, 보험료가 높습니다. 경제 상황과 가입 목표에 따라 선택이 달라집니다.</dd>
+
+      <dt>Q4: 어린이보험 가입 시 고지해야 하는 사항이 있나요?</dt>
+      <dd>A: 네, 아이의 건강 상태를 정확히 고지해야 합니다. 최근 3개월 이내 병원 치료 내역이나 1년 이내 재검사 소견, 5년 이내 입원/수술 내역 등을 고지해야 합니다. 고지의무를 위반할 경우 보험 가입이 거절되거나 향후 보험금 지급에 문제가 생길 수 있습니다.</dd>
+
+      <dt>Q5: 비갱신형이 갱신형보다 무조건 좋은가요?</dt>
+      <dd>A: 비갱신형은 장기적으로 총 납입액이 저렴할 수 있지만, 초기 보험료가 부담될 수 있습니다. 갱신형은 초기 보험료가 저렴하지만, 물가 상승에 따라 갱신 시점에 보험료가 크게 오를 위험이 있습니다. 본인의 경제 상황과 납입 능력을 고려하여 장단점을 비교해야 합니다.</dd>
+    </dl>
+    <a href="https://www.e-insmarket.or.kr/" target="_blank">보험다모아 보험료 비교 공시 시스템</a>
+  </section>
+
+  <section id="contact">
+    <span id="contact-anchor" class="anchor"></span>
+    <h2>1:1 맞춤 견적 상담 문의</h2>
+    <p>우리 아이의 정확한 나이, 성별, 건강 상태에 따라 최적의 어린이보험 상품은 달라집니다. 1:1 맞춤 상담을 통해 비갱신형, 갱신형 상품 비교 및 가장 저렴한 곳을 찾아보세요.</p>
+    <form action="/submit" method="POST" style="max-width:600px; margin:auto;">
+      <label for="name">이름<span style="color:red;">*</span></label><br />
+      <input type="text" id="name" name="name" required style="width:100%; padding:8px; margin-bottom:12px; border:1px solid #ccc; border-radius:4px;" />
+
+      <label for="phone">연락처<span style="color:red;">*</span></label><br />
+      <input type="tel" id="phone" name="phone" required placeholder="010-1234-5678" pattern="[0-9\-]+" style="width:100%; padding:8px; margin-bottom:12px; border:1px solid #ccc; border-radius:4px;" />
+
+      <label for="child-birthdate">아이 생년월일<span style="color:red;">*</span></label><br />
+      <input type="date" id="child-birthdate" name="child_birthdate" required style="width:100%; padding:8px; margin-bottom:12px; border:1px solid #ccc; border-radius:4px;" />
+
+      <label for="child-gender">아이 성별<span style="color:red;">*</span></label><br />
+      <select id="child-gender" name="child_gender" required style="width:100%; padding:8px; margin-bottom:12px; border:1px solid #ccc; border-radius:4px;">
+        <option value="">선택하세요</option>
+        <option value="남">남아</option>
+        <option value="여">여아</option>
+      </select>
+
+      <label for="current-insurance">현재 가입된 보험 유무</label><br />
+      <select id="current-insurance" name="current_insurance" style="width:100%; padding:8px; margin-bottom:12px; border:1px solid #ccc; border-radius:4px;">
+        <option value="없음">없음</option>
+        <option value="있음">있음 (특약 확인 필요)</option>
+      </select>
+
+      <label for="coverage-type">원하는 보장 유형<span style="color:red;">*</span></label><br />
+      <select id="coverage-type" name="coverage_type" required style="width:100%; padding:8px; margin-bottom:12px; border:1px solid #ccc; border-radius:4px;">
+        <option value="">선택하세요</option>
+        <option value="태아보험">태아보험 (선천성 질환 포함)</option>
+        <option value="비갱신형">비갱신형 어린이보험 (장기 보장)</option>
+        <option value="갱신형">갱신형 어린이보험 (단기 보장)</option>
+        <option value="성인 전환형">성인 전환형 어린이보험 (100세 만기)</option>
+        <option value="기타">기타 (추가 요청 사항 기재)</option>
+      </select>
+
+      <label for="budget">예상 월 보험료 (희망 금액)</label><br />
+      <input type="number" id="budget" name="budget" placeholder="예: 30000" style="width:100%; padding:8px; margin-bottom:12px; border:1px solid #ccc; border-radius:4px;" />
+
+      <label for="message">추가 요청 사항 (특이사항, 병력 등)</label><br />
+      <textarea id="message" name="message" rows="4" style="width:100%; padding:8px; margin-bottom:12px; border:1px solid #ccc; border-radius:4px;" placeholder="예: 알레르기 있음, 태아보험 가입 시기 확인"></textarea>
+
+      <button type="submit" class="btn-cta">맞춤 견적 문의 보내기</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 어린이보험 비교 플랫폼. 사업자 등록번호: 123-45-67890</p>
+    <p>본 페이지는 보험 비교를 위한 정보성 콘텐츠를 제공하며, 특정 상품 추천 및 판매는 하지 않습니다. 모든 보험 가입은 약관을 확인하시기 바랍니다.</p>
+    <p>연락처: <a href="tel:021234567">02-123-4567</a> | 이메일: <a href="mailto:help@domain.com">help@domain.com</a></p>
+    <a href="https://www.law.go.kr/lsInfoP.do?lsiSeq=278255&efYd=20260101#0000" target="_blank">보험업법 참고</a>
+  </footer>
+
+  
